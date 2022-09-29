@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx cypress run",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "cypress:runchrome": "cypress run --browser chrome"
   },
   "author": "Atul Sharma",
   "license": "ISC",
