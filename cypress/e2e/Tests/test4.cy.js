@@ -4,6 +4,7 @@ describe('TestSuite4', () => {
   it('automationtesting', () => {
     cy.visit('https://demo.automationtesting.in/Register.html')
     cy.url().should('include', 'automationtesting')
+    
 
     //Uname and pwd stuff
     cy.get('input[placeholder="First Name"]').should('be.enabled').clear().type('mercury')

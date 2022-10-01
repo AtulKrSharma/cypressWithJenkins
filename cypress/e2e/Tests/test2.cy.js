@@ -34,8 +34,7 @@ describe("TestSuite2", () => {
         cy.get('#btnFindAddress').click({force:true})
         cy.wait(1000)
         cy.get('#ddlAaddressListDropdown').should('be.visible').should('be.enabled').select('63a St. Lukes Road, BRISTOL')
-        cy.get('#AddressLine1').contains('63a St. Lukes Road')        
-       //.should('have.value', '63a St. Lukes Road, BRISTOL')
+        cy.get('#AddressLine1').should('have.value', '63a St. Lukes Road')
 
 
 
