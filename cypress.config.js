@@ -5,7 +5,12 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    "watchForFileChanges": false
-
+    watchForFileChanges: false,
+    experimentalStudio: false,
+    viewportHeight: 1920,
+    viewportWidth: 1080,
+    video: false,
+    screenshotOnRunFailure: false,
+    defaultCommandTimeout: 5000,
   },
 });
