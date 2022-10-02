@@ -1,3 +1,5 @@
+const { expect } = require("chai");
+
 before(function () {
   cy.log("Counter is in before hook");
   // "this" points at the test context object
@@ -31,8 +33,7 @@ describe("TestSuite7-Fixtures", () => {
     cy.get("#Username").type(this.users.username, { delay: 100 });
     cy.get("#check-availability-button").click();
     cy.wait(1000);
-    cy.get("#username-availabilty").should("be.visible");
-
+    cy.get("#username-availabilty").should("be.visible").with;
     cy.log("Counter is in test case- Ended");
   });
 });
